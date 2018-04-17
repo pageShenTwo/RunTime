@@ -15,6 +15,10 @@
 		8E06A7DC20848EEF002420A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E06A7DA20848EEF002420A9 /* LaunchScreen.storyboard */; };
 		8E06A7E720848EEF002420A9 /* RunTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E06A7E620848EEF002420A9 /* RunTimeTests.m */; };
 		8E06A7F220848EEF002420A9 /* RunTimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E06A7F120848EEF002420A9 /* RunTimeUITests.m */; };
+		8E06A80120848F13002420A9 /* PJRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E06A80020848F13002420A9 /* PJRuntime.m */; };
+		8E06A805208494D7002420A9 /* UIViewController+runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E06A804208494D7002420A9 /* UIViewController+runtime.m */; };
+		8E6705E920857B58009A2624 /* PJPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6705E820857B58009A2624 /* PJPerson.m */; };
+		8E6705EC20857B8F009A2624 /* NSObject+PJKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6705EB20857B8F009A2624 /* NSObject+PJKVO.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		8E06A7ED20848EEF002420A9 /* RunTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E06A7F120848EEF002420A9 /* RunTimeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunTimeUITests.m; sourceTree = "<group>"; };
 		8E06A7F320848EEF002420A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E06A7FF20848F13002420A9 /* PJRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJRuntime.h; sourceTree = "<group>"; };
+		8E06A80020848F13002420A9 /* PJRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJRuntime.m; sourceTree = "<group>"; };
+		8E06A803208494D7002420A9 /* UIViewController+runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+runtime.h"; sourceTree = "<group>"; };
+		8E06A804208494D7002420A9 /* UIViewController+runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+runtime.m"; sourceTree = "<group>"; };
+		8E6705E720857B58009A2624 /* PJPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJPerson.h; sourceTree = "<group>"; };
+		8E6705E820857B58009A2624 /* PJPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJPerson.m; sourceTree = "<group>"; };
+		8E6705EA20857B8F009A2624 /* NSObject+PJKVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PJKVO.h"; sourceTree = "<group>"; };
+		8E6705EB20857B8F009A2624 /* NSObject+PJKVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PJKVO.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +113,17 @@
 		8E06A7CB20848EEF002420A9 /* RunTime */ = {
 			isa = PBXGroup;
 			children = (
+				8E06A80220848F1E002420A9 /* PJRunTime */,
 				8E06A7CF20848EEF002420A9 /* AppDelegate.h */,
 				8E06A7D020848EEF002420A9 /* AppDelegate.m */,
+				8E6705E720857B58009A2624 /* PJPerson.h */,
+				8E6705E820857B58009A2624 /* PJPerson.m */,
+				8E6705EA20857B8F009A2624 /* NSObject+PJKVO.h */,
+				8E6705EB20857B8F009A2624 /* NSObject+PJKVO.m */,
 				8E06A7D220848EEF002420A9 /* ViewController.h */,
 				8E06A7D320848EEF002420A9 /* ViewController.m */,
+				8E06A803208494D7002420A9 /* UIViewController+runtime.h */,
+				8E06A804208494D7002420A9 /* UIViewController+runtime.m */,
 				8E06A7D520848EEF002420A9 /* Main.storyboard */,
 				8E06A7D820848EEF002420A9 /* Assets.xcassets */,
 				8E06A7DA20848EEF002420A9 /* LaunchScreen.storyboard */,
@@ -138,6 +157,15 @@
 				8E06A7F320848EEF002420A9 /* Info.plist */,
 			);
 			path = RunTimeUITests;
+			sourceTree = "<group>";
+		};
+		8E06A80220848F1E002420A9 /* PJRunTime */ = {
+			isa = PBXGroup;
+			children = (
+				8E06A7FF20848F13002420A9 /* PJRuntime.h */,
+				8E06A80020848F13002420A9 /* PJRuntime.m */,
+			);
+			name = PJRunTime;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +235,7 @@
 				TargetAttributes = {
 					8E06A7C820848EEF002420A9 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7MEQPTT65A;
 						ProvisioningStyle = Automatic;
 					};
 					8E06A7E120848EEF002420A9 = {
@@ -273,8 +302,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E06A805208494D7002420A9 /* UIViewController+runtime.m in Sources */,
+				8E06A80120848F13002420A9 /* PJRuntime.m in Sources */,
+				8E6705E920857B58009A2624 /* PJPerson.m in Sources */,
 				8E06A7D420848EEF002420A9 /* ViewController.m in Sources */,
 				8E06A7D120848EEF002420A9 /* AppDelegate.m in Sources */,
+				8E6705EC20857B8F009A2624 /* NSObject+PJKVO.m in Sources */,
 				8E06A7CE20848EEF002420A9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,7 +459,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7MEQPTT65A;
 				INFOPLIST_FILE = RunTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dcafsdf.RunTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -437,7 +472,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7MEQPTT65A;
 				INFOPLIST_FILE = RunTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dcafsdf.RunTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -509,6 +546,7 @@
 				8E06A7F820848EEF002420A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E06A7F920848EEF002420A9 /* Build configuration list for PBXNativeTarget "RunTimeTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +555,7 @@
 				8E06A7FB20848EEF002420A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E06A7FC20848EEF002420A9 /* Build configuration list for PBXNativeTarget "RunTimeUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +564,7 @@
 				8E06A7FE20848EEF002420A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
