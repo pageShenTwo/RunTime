@@ -43,6 +43,40 @@ static NSString *const PJAssociatedKey = @"PJAssociatedKey";
 
 #pragma MARK - 分类自定义通知
 @implementation NSObject (PJKVO)
+
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wobjc-protocol-method-implementation"
+// your override
+- (id)forwardingTargetForSelector:(SEL)aSelector
+{
+    // 指定转发的消息接受者为空
+    return nil;
+}
+- (void)forwardInvocation:(NSInvocation *)anInvocation
+{
+    // 重写该方法为了防止crash方法的调用
+}
+- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector
+{
+    NSString *message = NSStringFromSelector(aSelector);
+    if ([message hasPrefix:@"_"]) {//对私用方法不收集崩溃日志
+        return nil;
+    }
+    NSString *newMessage = [NSString stringWithFormat:@"[%@ %@] 未知的方法",NSStringFromClass([self class]),NSStringFromSelector(aSelector)];
+    NSMethodSignature *sin = [[self class] instanceMethodSignatureForSelector:@selector(PJColloctMessageMethod:)];
+    [self PJColloctMessageMethod:newMessage];
+    return sin;
+}
+
+- (void)PJColloctMessageMethod:(NSString *)message{
+    NSLog(@"%@",message);
+}
+
+
+#pragma clang diagnostic pop
+
+
 //setterforgetter 根据Get方法生成set方法
 static NSString *setterforgetter(NSString *getter){
     if (getter <= 0) {

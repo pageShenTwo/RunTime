@@ -11,5 +11,10 @@
 @interface PJPerson : NSObject
 
 @property (copy, nonatomic) NSString *name;
+@property (copy, nonatomic) NSString *age;
+@property (copy, nonatomic) NSString *height;
+@property (copy, nonatomic) NSString *weight;
+
+- (void)eat;
 
 @end

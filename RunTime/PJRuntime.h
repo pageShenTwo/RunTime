@@ -41,4 +41,21 @@ typedef NS_ENUM(NSUInteger,PJGetMethod) {
  */
 + (Class)PJCreatClassWith:(id)selfClass className:(NSString *)className;
 
+
+/**
+ 获取所有Ivar列表
+
+ @param className 类名
+ @return 返回名字列表
+ */
++ (NSMutableArray *)PJGetAllIvarFromClass:(NSString *)className;
+
+/**
+ 获取所有的Ivar列表
+
+ @param className 类名
+ @return 返回属性列表
+ */
++ (NSMutableArray *)PJGetAllPrototyFromClass:(NSString *)className;
+
 @end

@@ -17,6 +17,7 @@
 		8E06A7F220848EEF002420A9 /* RunTimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E06A7F120848EEF002420A9 /* RunTimeUITests.m */; };
 		8E06A80120848F13002420A9 /* PJRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E06A80020848F13002420A9 /* PJRuntime.m */; };
 		8E06A805208494D7002420A9 /* UIViewController+runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E06A804208494D7002420A9 /* UIViewController+runtime.m */; };
+		8E472F8720871C6800327A3A /* UIButton+PJButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E472F8620871C6800327A3A /* UIButton+PJButton.m */; };
 		8E6705E920857B58009A2624 /* PJPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6705E820857B58009A2624 /* PJPerson.m */; };
 		8E6705EC20857B8F009A2624 /* NSObject+PJKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6705EB20857B8F009A2624 /* NSObject+PJKVO.m */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,8 @@
 		8E06A80020848F13002420A9 /* PJRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJRuntime.m; sourceTree = "<group>"; };
 		8E06A803208494D7002420A9 /* UIViewController+runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+runtime.h"; sourceTree = "<group>"; };
 		8E06A804208494D7002420A9 /* UIViewController+runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+runtime.m"; sourceTree = "<group>"; };
+		8E472F8520871C6800327A3A /* UIButton+PJButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+PJButton.h"; sourceTree = "<group>"; };
+		8E472F8620871C6800327A3A /* UIButton+PJButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+PJButton.m"; sourceTree = "<group>"; };
 		8E6705E720857B58009A2624 /* PJPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJPerson.h; sourceTree = "<group>"; };
 		8E6705E820857B58009A2624 /* PJPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJPerson.m; sourceTree = "<group>"; };
 		8E6705EA20857B8F009A2624 /* NSObject+PJKVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PJKVO.h"; sourceTree = "<group>"; };
@@ -118,8 +121,6 @@
 				8E06A7D020848EEF002420A9 /* AppDelegate.m */,
 				8E6705E720857B58009A2624 /* PJPerson.h */,
 				8E6705E820857B58009A2624 /* PJPerson.m */,
-				8E6705EA20857B8F009A2624 /* NSObject+PJKVO.h */,
-				8E6705EB20857B8F009A2624 /* NSObject+PJKVO.m */,
 				8E06A7D220848EEF002420A9 /* ViewController.h */,
 				8E06A7D320848EEF002420A9 /* ViewController.m */,
 				8E06A803208494D7002420A9 /* UIViewController+runtime.h */,
@@ -164,6 +165,10 @@
 			children = (
 				8E06A7FF20848F13002420A9 /* PJRuntime.h */,
 				8E06A80020848F13002420A9 /* PJRuntime.m */,
+				8E6705EA20857B8F009A2624 /* NSObject+PJKVO.h */,
+				8E6705EB20857B8F009A2624 /* NSObject+PJKVO.m */,
+				8E472F8520871C6800327A3A /* UIButton+PJButton.h */,
+				8E472F8620871C6800327A3A /* UIButton+PJButton.m */,
 			);
 			name = PJRunTime;
 			sourceTree = "<group>";
@@ -303,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E06A805208494D7002420A9 /* UIViewController+runtime.m in Sources */,
+				8E472F8720871C6800327A3A /* UIButton+PJButton.m in Sources */,
 				8E06A80120848F13002420A9 /* PJRuntime.m in Sources */,
 				8E6705E920857B58009A2624 /* PJPerson.m in Sources */,
 				8E06A7D420848EEF002420A9 /* ViewController.m in Sources */,
